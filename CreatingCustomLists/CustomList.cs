@@ -19,32 +19,44 @@ namespace CreatingCustomLists
 
 
         //member methods(CAN DO)
+        public void Add()     //make two arrays. add said arrays together by copying the first?
+        {
 
+        }
 
+        public void Remove()
+        {
 
+        }
 
+        public void IterateArray()
+        {
 
+        }
 
+        public void ToString()
+        {
 
-        //a count int - how many there are
-        //objects
+        }
 
-        //make an array - to add copy original array and then add them together
+        public void OverLoadPlusOperator() 
+        {
+            //over load + operator so i can add two instances
+        }
 
-        //add object method
+        public void OverLoadMinusOperator()
+        {
+            //overload - operator so i can subract
+        }
 
-        //remove object method
+        public void count()
+        {
 
-        // loop through list method
-        //index
+        }
 
-        //??overrice ToString method
-        //create ToString method and override
-        //create + & - opperator & overload 
+        public void Zipper()
+        {
 
-        //count elements in list class
-
-        //11 linking lists together like a zipper
-
+        }
     }
 }
