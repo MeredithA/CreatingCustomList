@@ -1,1 +1,6 @@
 C:\Users\Meredith\Desktop\DCC\VisualStudio\CreatingCustomLists\CreatingCustomLists\bin\Debug\CreatingCustomLists.exe.config
+C:\Users\Meredith\Desktop\DCC\VisualStudio\CreatingCustomLists\CreatingCustomLists\bin\Debug\CreatingCustomLists.exe
+C:\Users\Meredith\Desktop\DCC\VisualStudio\CreatingCustomLists\CreatingCustomLists\bin\Debug\CreatingCustomLists.pdb
+C:\Users\Meredith\Desktop\DCC\VisualStudio\CreatingCustomLists\CreatingCustomLists\obj\Debug\CreatingCustomLists.csprojResolveAssemblyReference.cache
+C:\Users\Meredith\Desktop\DCC\VisualStudio\CreatingCustomLists\CreatingCustomLists\obj\Debug\CreatingCustomLists.exe
+C:\Users\Meredith\Desktop\DCC\VisualStudio\CreatingCustomLists\CreatingCustomLists\obj\Debug\CreatingCustomLists.pdb

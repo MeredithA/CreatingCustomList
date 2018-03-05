@@ -1,0 +1,9 @@
+C:\Users\Meredith\Desktop\DCC\VisualStudio\CreatingCustomLists\CustomListTests\bin\Debug\CustomListTests.dll
+C:\Users\Meredith\Desktop\DCC\VisualStudio\CreatingCustomLists\CustomListTests\bin\Debug\CustomListTests.pdb
+C:\Users\Meredith\Desktop\DCC\VisualStudio\CreatingCustomLists\CustomListTests\bin\Debug\CreatingCustomLists.exe
+C:\Users\Meredith\Desktop\DCC\VisualStudio\CreatingCustomLists\CustomListTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Meredith\Desktop\DCC\VisualStudio\CreatingCustomLists\CustomListTests\bin\Debug\CreatingCustomLists.pdb
+C:\Users\Meredith\Desktop\DCC\VisualStudio\CreatingCustomLists\CustomListTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Meredith\Desktop\DCC\VisualStudio\CreatingCustomLists\CustomListTests\obj\Debug\CustomListTests.csprojResolveAssemblyReference.cache
+C:\Users\Meredith\Desktop\DCC\VisualStudio\CreatingCustomLists\CustomListTests\obj\Debug\CustomListTests.dll
+C:\Users\Meredith\Desktop\DCC\VisualStudio\CreatingCustomLists\CustomListTests\obj\Debug\CustomListTests.pdb

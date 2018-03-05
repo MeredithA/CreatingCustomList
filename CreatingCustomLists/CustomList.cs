@@ -6,27 +6,36 @@ using System.Threading.Tasks;
 
 namespace CreatingCustomLists
 {
-    class CustomList
+    class CustomList<T>
     {
-        //member variable (HAS A)
-        Array firstArray = new Array[5];
-        Array secondArray = new Array[10];
-
-
-
-        //constructor (method in the class which gets executed when its object is created)
-
-
-
-        //member methods(CAN DO)
-        public void Add()     //make two arrays. add said arrays together by copying the first?
+        T[] firstArray;
+        public CustomList()
         {
-
+            firstArray = new T[5];
         }
 
-        public void Remove()
-        {
 
+
+        public void Add(T item)
+        {
+            T[] newArray = new T[firstArray.Length + 1];
+            for (int i = 0; i < firstArray.Length; i++)
+            {
+                newArray[i] = firstArray[i];
+            }
+            newArray[firstArray.Length] = item;
+            firstArray = newArray;
+        }
+
+
+
+        public bool Remove(T item){
+            if (item == null)
+                return false;
+            else
+            return true;
+        }
+        public {
         }
 
         public void IterateArray()
@@ -34,7 +43,7 @@ namespace CreatingCustomLists
 
         }
 
-        public void ToString()
+        public void ToString<T>()
         {
 
         }
