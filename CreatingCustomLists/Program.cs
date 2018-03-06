@@ -10,6 +10,17 @@ namespace CreatingCustomLists
     {
         static void Main(string[] args)
         {
+            CustomList<int> test = new CustomList<int>();
+
+            test.Add(1);
+            test.Add(2);
+            test.Add(3);
+            test.Add(4);
+            test.Add(5);
+
+            test.Remove(5);            
+
+            Console.ReadLine();
         }
     }
 }
