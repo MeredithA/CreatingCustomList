@@ -78,6 +78,37 @@ namespace CustomListTests
             Assert.AreEqual(expected, actual);
 
         }
+        [TestMethod]
+        public void IemnumerableTestByReturningElementsInALists()
+        {
+            CustomList<string> customList = new CustomList<string>();
+
+
+            // arrange
+            string expected = "TestingTheIEnumerable";
+            string actual = "";
+
+            //act
+            customList.Add("Testing");
+            customList.Add("The");
+            customList.Add("IEnumerable");
+            foreach (string item in customList)
+            {
+                actual += item;
+            }
+
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+
+
+
+        //[TestMethod]
+        //[ExpectedException(typeof(IndexOutOfRangeException))]
+        //public void GettingValueOfIndexNotInListThrowsException()
+        //{
+        //    //for each
+        //}
     }
 }
 

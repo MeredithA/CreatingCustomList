@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,39 +7,38 @@ using System.Threading.Tasks;
 
 namespace CreatingCustomLists
 {
-    public class CustomList<T>
+    public class CustomList<T> : IEnumerable<T>
     {
         T[] firstArray;
-        int capacity;
         int count;
+        int capacity;
 
-        public CustomList()
+        public CustomList() 
         {
-            capacity = 10;
             count = 0;
-            firstArray = new T[capacity];
+            firstArray = new T[10];
         }
 
         public T this[int index]
         {
             get
             {
+                if (index >= count)
+                {
+                    throw new IndexOutOfRangeException();
+                }
                 return firstArray[index];
             }
 
             set
             {
+                if (index >= count)
+                {
+                    throw new IndexOutOfRangeException();
+                }
                 firstArray[index] = value;
             }
         }
-
-        //public int Capacity
-        //{
-        //    get
-        //    {
-        //        return capacity;
-        //    }            
-        //}
 
         public int Count
         {
@@ -47,6 +47,7 @@ namespace CreatingCustomLists
                 return count;
             }
         }
+
 
         public void Add(T item)
         {
@@ -88,15 +89,14 @@ namespace CreatingCustomLists
             }
         }
 
-
-        public void IterateArray(T item)
+        public override string ToString()
         {
-
-        }
-
-        public void ToString(T item)
-        {
-
+            string toString = "";
+            for (int i = 0; i < count; i++)
+            {
+                toString = toString + firstArray[i] + " ";
+            }
+            return toString;
         }
 
         public void OverLoadPlusOperator() 
@@ -113,6 +113,21 @@ namespace CreatingCustomLists
         public void Zipper(T item)
         {
 
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    yield return firstArray[i];
+                }
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            throw new NotImplementedException();
         }
     }
 }
