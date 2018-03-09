@@ -91,28 +91,59 @@ namespace CreatingCustomLists
 
         public override string ToString()
         {
-            string toString = "";
+        }
+
+        public static CustomList<T> operator + (CustomList<T> customList1, CustomList<T> customList2)
+        {
+            CustomList<T> newList = new CustomList<T>();
+
+            for (int i = 0; i < customList1.count; i++)
+            {
+                newList.Add(customList1[i]);
+            }
+
+            for (int i = 0; i < customList2.count; i++)
+            {
+                newList.Add(customList2[i]);
+            }
+            return newList;
+        }
+
+        public static CustomList<T> operator -(CustomList<T> customList1, CustomList<T> customList2)
+        {
+            CustomList<T> list = new CustomList<T>();
+
+            for (int i = 0; i < customList1.count; i++)
+            {
+                list.Add(customList1[i]);
+            }
+
+            for (int i = 0; i < customList2.count; i++)
+            {
+                if (customList2[i].Equals(customList1[i]))
+                {
+                    list.Remove(customList2[i]);
+                }
+            }
+            return list;
+        }
+
+        public CustomList<T> Zipper(CustomList<T> zipperList1, CustomList<T> zipperList2)
+        {
+            CustomList<T> zippedList = new CustomList<T>();
+
             for (int i = 0; i < count; i++)
             {
-                toString = toString + firstArray[i] + " ";
+                if (zipperList1[i] != null)
+                {
+                    zippedList.Add(zipperList1[i]);
+                }
+                if (zipperList2[i] != null)
+                {
+                    zippedList.Add(zipperList2[i]);
+                }
             }
-            return toString;
-        }
-
-        public void OverLoadPlusOperator() 
-        {
-            //over load + operator so i can add two instances
-        }
-
-        public void OverLoadMinusOperator(T item)
-        {
-            //overload - operator so i can subract
-        }
-
-        
-        public void Zipper(T item)
-        {
-
+            return zippedList;
         }
 
         public IEnumerator<T> GetEnumerator()
@@ -127,7 +158,7 @@ namespace CreatingCustomLists
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            throw new NotImplementedException();
+            return GetEnumerator();
         }
     }
 }
